@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{78997916-8D66-41DB-AB84-4ABEDE79AAF8}</ProjectGuid>
+    <RootNamespace>LearnOpenGL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)LearnOpenGL\Assimp\include;$(SolutionDir)LearnOpenGL\OpenGl\GLM;$(SolutionDir)LearnOpenGL\OpenGl\GLEW\include;$(SolutionDir)LearnOpenGL\FbxSDK\include;$(SolutionDir)LearnOpenGL\OpenGl\GLFW\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);FBXSDK_SHARED;</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)LearnOpenGL\Assimp;$(SolutionDir)LearnOpenGL\OpenGl\GLEW\lib\Release\x64;$(SolutionDir)LearnOpenGL\OpenGl\GLFW\lib;$(SolutionDir)LearnOpenGL\FbxSDK\lib\vs2015\x64\debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libfbxsdk.lib;kernel32.lib;opengl32.lib;assimp.lib;glfw3.lib;glew32s.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)LearnOpenGL\Assimp\include;$(SolutionDir)LearnOpenGL\OpenGl\GLM;$(SolutionDir)LearnOpenGL\OpenGl\GLEW\include;$(SolutionDir)LearnOpenGL\FbxSDK\include;$(SolutionDir)LearnOpenGL\OpenGl\GLFW\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);FBXSDK_SHARED;</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)LearnOpenGL\Assimp;$(SolutionDir)LearnOpenGL\OpenGl\GLEW\lib\Release\x64;$(SolutionDir)LearnOpenGL\OpenGl\GLFW\lib;$(SolutionDir)LearnOpenGL\FbxSDK\lib\vs2015\x64\debug</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libfbxsdk.lib;kernel32.lib;opengl32.lib;assimp.lib;glfw3.lib;glew32s.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\CubeMap.cpp" />
+    <ClCompile Include="Src\DepthTest\DepthTest.cpp" />
+    <ClCompile Include="Src\Light.cpp" />
+    <ClCompile Include="Src\Model.cpp" />
+    <ClCompile Include="Src\Mesh.cpp" />
+    <ClCompile Include="Src\MyCamera.cpp" />
+    <ClCompile Include="Src\Main.cpp" />
+    <ClCompile Include="Src\Shader.cpp" />
+    <ClCompile Include="Src\TestCubeMap\CubeMapTest.cpp" />
+    <ClCompile Include="Src\TestModel\TestModel.cpp" />
+    <ClCompile Include="Src\TestShadow\TestShadow.cpp" />
+    <ClCompile Include="Src\Texture.cpp" />
+    <ClCompile Include="Src\TestLight\TestLight.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assimp\assimp.dll" />
+    <None Include="Assimp\include\assimp\.editorconfig" />
+    <None Include="Assimp\include\assimp\color4.inl" />
+    <None Include="Assimp\include\assimp\config.h.in" />
+    <None Include="Assimp\include\assimp\material.inl" />
+    <None Include="Assimp\include\assimp\matrix3x3.inl" />
+    <None Include="Assimp\include\assimp\matrix4x4.inl" />
+    <None Include="Assimp\include\assimp\quaternion.inl" />
+    <None Include="Assimp\include\assimp\SmoothingGroups.inl" />
+    <None Include="Assimp\include\assimp\vector2.inl" />
+    <None Include="Assimp\include\assimp\vector3.inl" />
+    <None Include="res\cube.fbx" />
+    <None Include="res\Hero1_Mesh.FBX" />
+    <None Include="res\spider.fbx" />
+    <None Include="res\Sword.FBX" />
+    <None Include="Shaders\AdvancedLight\BlinnPhone.fs" />
+    <None Include="Shaders\AdvancedLight\BlinnPhone.vs" />
+    <None Include="Shaders\BaseFragmentShader.fs" />
+    <None Include="Shaders\BaseLightVS.vs" />
+    <None Include="Shaders\BaseLightFS.fs" />
+    <None Include="Shaders\BaseShaders.shader" />
+    <None Include="Shaders\BaseVertexShader.vs" />
+    <None Include="Shaders\CubeMap\CubeMap.fs" />
+    <None Include="Shaders\CubeMap\CubeMap.vs" />
+    <None Include="Shaders\DepthTest\DepthTest.fs" />
+    <None Include="Shaders\DepthTest\DepthTest.vs" />
+    <None Include="Shaders\DepthTest\Floor.fs" />
+    <None Include="Shaders\DepthTest\Floor.vs" />
+    <None Include="Shaders\DepthTest\SingleColor.fs" />
+    <None Include="Shaders\DepthTest\SingleColor.vs" />
+    <None Include="Shaders\NanosuitFragmentShader.fs" />
+    <None Include="Shaders\NanosuitVertexShader.vs" />
+    <None Include="Shaders\Normals.fs" />
+    <None Include="Shaders\Normals.gs" />
+    <None Include="Shaders\Normals.vs" />
+    <None Include="Shaders\ReflectCube\ReflectCube.fs" />
+    <None Include="Shaders\ReflectCube\ReflectCube.vs" />
+    <None Include="Shaders\RefractCube\RefractCube.fs" />
+    <None Include="Shaders\RefractCube\RefractCube.vs" />
+    <None Include="Shaders\ShadowTest\debug_quad.fs" />
+    <None Include="Shaders\ShadowTest\debug_quad.vs" />
+    <None Include="Shaders\ShadowTest\shadow_mapping.fs" />
+    <None Include="Shaders\ShadowTest\shadow_mapping.vs" />
+    <None Include="Shaders\ShadowTest\shadow_mapping_depth.fs" />
+    <None Include="Shaders\ShadowTest\shadow_mapping_depth.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Assimp\include\assimp\aabb.h" />
+    <ClInclude Include="Assimp\include\assimp\ai_assert.h" />
+    <ClInclude Include="Assimp\include\assimp\anim.h" />
+    <ClInclude Include="Assimp\include\assimp\BaseImporter.h" />
+    <ClInclude Include="Assimp\include\assimp\Bitmap.h" />
+    <ClInclude Include="Assimp\include\assimp\BlobIOSystem.h" />
+    <ClInclude Include="Assimp\include\assimp\ByteSwapper.h" />
+    <ClInclude Include="Assimp\include\assimp\camera.h" />
+    <ClInclude Include="Assimp\include\assimp\cexport.h" />
+    <ClInclude Include="Assimp\include\assimp\cfileio.h" />
+    <ClInclude Include="Assimp\include\assimp\cimport.h" />
+    <ClInclude Include="Assimp\include\assimp\color4.h" />
+    <ClInclude Include="Assimp\include\assimp\Compiler\poppack1.h" />
+    <ClInclude Include="Assimp\include\assimp\Compiler\pstdint.h" />
+    <ClInclude Include="Assimp\include\assimp\Compiler\pushpack1.h" />
+    <ClInclude Include="Assimp\include\assimp\config.h" />
+    <ClInclude Include="Assimp\include\assimp\CreateAnimMesh.h" />
+    <ClInclude Include="Assimp\include\assimp\DefaultIOStream.h" />
+    <ClInclude Include="Assimp\include\assimp\DefaultIOSystem.h" />
+    <ClInclude Include="Assimp\include\assimp\DefaultLogger.hpp" />
+    <ClInclude Include="Assimp\include\assimp\Defines.h" />
+    <ClInclude Include="Assimp\include\assimp\defs.h" />
+    <ClInclude Include="Assimp\include\assimp\Exceptional.h" />
+    <ClInclude Include="Assimp\include\assimp\Exporter.hpp" />
+    <ClInclude Include="Assimp\include\assimp\fast_atof.h" />
+    <ClInclude Include="Assimp\include\assimp\GenericProperty.h" />
+    <ClInclude Include="Assimp\include\assimp\Hash.h" />
+    <ClInclude Include="Assimp\include\assimp\Importer.hpp" />
+    <ClInclude Include="Assimp\include\assimp\importerdesc.h" />
+    <ClInclude Include="Assimp\include\assimp\IOStream.hpp" />
+    <ClInclude Include="Assimp\include\assimp\IOStreamBuffer.h" />
+    <ClInclude Include="Assimp\include\assimp\IOSystem.hpp" />
+    <ClInclude Include="Assimp\include\assimp\irrXMLWrapper.h" />
+    <ClInclude Include="Assimp\include\assimp\light.h" />
+    <ClInclude Include="Assimp\include\assimp\LineSplitter.h" />
+    <ClInclude Include="Assimp\include\assimp\LogAux.h" />
+    <ClInclude Include="Assimp\include\assimp\Logger.hpp" />
+    <ClInclude Include="Assimp\include\assimp\LogStream.hpp" />
+    <ClInclude Include="Assimp\include\assimp\Macros.h" />
+    <ClInclude Include="Assimp\include\assimp\material.h" />
+    <ClInclude Include="Assimp\include\assimp\MathFunctions.h" />
+    <ClInclude Include="Assimp\include\assimp\matrix3x3.h" />
+    <ClInclude Include="Assimp\include\assimp\matrix4x4.h" />
+    <ClInclude Include="Assimp\include\assimp\MemoryIOWrapper.h" />
+    <ClInclude Include="Assimp\include\assimp\mesh.h" />
+    <ClInclude Include="Assimp\include\assimp\metadata.h" />
+    <ClInclude Include="Assimp\include\assimp\NullLogger.hpp" />
+    <ClInclude Include="Assimp\include\assimp\ParsingUtils.h" />
+    <ClInclude Include="Assimp\include\assimp\pbrmaterial.h" />
+    <ClInclude Include="Assimp\include\assimp\port\AndroidJNI\AndroidJNIIOSystem.h" />
+    <ClInclude Include="Assimp\include\assimp\postprocess.h" />
+    <ClInclude Include="Assimp\include\assimp\Profiler.h" />
+    <ClInclude Include="Assimp\include\assimp\ProgressHandler.hpp" />
+    <ClInclude Include="Assimp\include\assimp\qnan.h" />
+    <ClInclude Include="Assimp\include\assimp\quaternion.h" />
+    <ClInclude Include="Assimp\include\assimp\RemoveComments.h" />
+    <ClInclude Include="Assimp\include\assimp\scene.h" />
+    <ClInclude Include="Assimp\include\assimp\SceneCombiner.h" />
+    <ClInclude Include="Assimp\include\assimp\SGSpatialSort.h" />
+    <ClInclude Include="Assimp\include\assimp\SkeletonMeshBuilder.h" />
+    <ClInclude Include="Assimp\include\assimp\SmoothingGroups.h" />
+    <ClInclude Include="Assimp\include\assimp\SpatialSort.h" />
+    <ClInclude Include="Assimp\include\assimp\StandardShapes.h" />
+    <ClInclude Include="Assimp\include\assimp\StreamReader.h" />
+    <ClInclude Include="Assimp\include\assimp\StreamWriter.h" />
+    <ClInclude Include="Assimp\include\assimp\StringComparison.h" />
+    <ClInclude Include="Assimp\include\assimp\StringUtils.h" />
+    <ClInclude Include="Assimp\include\assimp\Subdivision.h" />
+    <ClInclude Include="Assimp\include\assimp\texture.h" />
+    <ClInclude Include="Assimp\include\assimp\TinyFormatter.h" />
+    <ClInclude Include="Assimp\include\assimp\types.h" />
+    <ClInclude Include="Assimp\include\assimp\vector2.h" />
+    <ClInclude Include="Assimp\include\assimp\vector3.h" />
+    <ClInclude Include="Assimp\include\assimp\version.h" />
+    <ClInclude Include="Assimp\include\assimp\Vertex.h" />
+    <ClInclude Include="Assimp\include\assimp\XMLTools.h" />
+    <ClInclude Include="Assimp\include\assimp\ZipArchiveIOSystem.h" />
+    <ClInclude Include="Src\CubeMap.h" />
+    <ClInclude Include="Src\DepthTest\DepthTest.h" />
+    <ClInclude Include="Src\Light.h" />
+    <ClInclude Include="Src\Model.h" />
+    <ClInclude Include="Src\Mesh.h" />
+    <ClInclude Include="Src\MyCamera.h" />
+    <ClInclude Include="Src\Shader.h" />
+    <ClInclude Include="Src\stb_image.h" />
+    <ClInclude Include="Src\TestCubeMap\CubeMapTest.h" />
+    <ClInclude Include="Src\TestModel\TestModel.h" />
+    <ClInclude Include="Src\TestShadow\TestShadow.h" />
+    <ClInclude Include="Src\Texture.h" />
+    <ClInclude Include="Src\gl_inf.h" />
+    <ClInclude Include="Src\TestLight\TestLight.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\texture\01.png" />
+    <Image Include="res\texture\02.png" />
+    <Image Include="res\texture\2eeba715.dds" />
+    <Image Include="res\texture\dog.jpg" />
+    <Image Include="res\texture\face.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Assimp\assimp.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
