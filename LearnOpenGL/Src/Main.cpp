@@ -8,10 +8,18 @@
 
 int main(int argc, char** argv)
 {
-	//TestModel::Run();
+	//测试灯光
 	//TestLight::Run();
-	//DepthTest::Run();
-	CubeMapTest::Run();
+
+	//立方体贴图测试
+	//CubeMapTest::Run();
+
+	//阴影测试
 	//TestShadow::Run();
+	TestShadow::PointShadow();
+
+	//测试模型读取
+	//TestModel::Run();
+
 	return 0;
 }

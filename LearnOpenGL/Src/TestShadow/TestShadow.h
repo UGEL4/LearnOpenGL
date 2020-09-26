@@ -9,6 +9,7 @@
 #include "../Shader.h"
 #include "../gl_inf.h"
 #include "../Texture.h"
+#include <vector>
 
 namespace TestShadow
 {
@@ -17,4 +18,6 @@ namespace TestShadow
 	bool InitOpenGl(GLFWwindow** window, const float width, const float height);
 
 	void Run();
+
+	void PointShadow();
 }

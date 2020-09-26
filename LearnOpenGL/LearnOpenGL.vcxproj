@@ -130,7 +130,12 @@
     <None Include="Shaders\RefractCube\RefractCube.vs" />
     <None Include="Shaders\ShadowTest\debug_quad.fs" />
     <None Include="Shaders\ShadowTest\debug_quad.vs" />
+    <None Include="Shaders\ShadowTest\depthCubeMap.fs" />
+    <None Include="Shaders\ShadowTest\depthCubeMap.gs" />
+    <None Include="Shaders\ShadowTest\depthCubeMap.vs" />
     <None Include="Shaders\ShadowTest\shadow_mapping.fs" />
+    <None Include="Shaders\ShadowTest\point_shadow_mapping.vs" />
+    <None Include="Shaders\ShadowTest\point_shadow_mapping.fs" />
     <None Include="Shaders\ShadowTest\shadow_mapping.vs" />
     <None Include="Shaders\ShadowTest\shadow_mapping_depth.fs" />
     <None Include="Shaders\ShadowTest\shadow_mapping_depth.vs" />

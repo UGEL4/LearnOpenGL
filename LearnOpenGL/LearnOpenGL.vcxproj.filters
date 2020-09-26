@@ -111,12 +111,17 @@
     <None Include="Shaders\Normals.gs" />
     <None Include="Shaders\AdvancedLight\BlinnPhone.fs" />
     <None Include="Shaders\AdvancedLight\BlinnPhone.vs" />
-    <None Include="Shaders\ShadowTest\shadow_mapping.fs" />
     <None Include="Shaders\ShadowTest\shadow_mapping.vs" />
     <None Include="Shaders\ShadowTest\shadow_mapping_depth.vs" />
     <None Include="Shaders\ShadowTest\shadow_mapping_depth.fs" />
     <None Include="Shaders\ShadowTest\debug_quad.vs" />
     <None Include="Shaders\ShadowTest\debug_quad.fs" />
+    <None Include="Shaders\ShadowTest\depthCubeMap.vs" />
+    <None Include="Shaders\ShadowTest\depthCubeMap.fs" />
+    <None Include="Shaders\ShadowTest\depthCubeMap.gs" />
+    <None Include="Shaders\ShadowTest\point_shadow_mapping.vs" />
+    <None Include="Shaders\ShadowTest\shadow_mapping.fs" />
+    <None Include="Shaders\ShadowTest\point_shadow_mapping.fs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\MyCamera.h">

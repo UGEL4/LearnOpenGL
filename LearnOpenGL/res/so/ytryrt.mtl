@@ -1,0 +1,66 @@
+newmtl Model001_Material001
+map_Kd son_body_base_pp1.png
+map_bump r_son_a_body_nrm_n_pp1.png
+
+newmtl Model001_Material002
+map_Kd son_body_base_pp1.png
+map_bump r_son_a_body_nrm_n_pp1.png
+
+newmtl Model001_Material003
+map_Kd son_face_base_pp1.png
+map_bump luv_face_nrm_n_pp1.png
+
+newmtl Model001_Material004
+map_Kd son_skin_base_pp1.png
+map_bump luv_skin_nrm_512_n_pp1.png
+
+newmtl Model001_Material005
+map_Kd son_hair1_base_pp1.png
+map_bump tin_hair1_nrm_n.png
+
+newmtl Model001_Material006
+map_Kd sonia_g_base_pp1.png
+map_bump sonia_g_nrm_n_pp1.png
+
+newmtl Model001_Material007
+map_Kd r_son_a_wear_base_pp1.png
+map_bump r_son_a_wear_nrm_512_n_pp1.png
+
+newmtl Model001_Material008
+map_Kd arm_l_wing_512.png
+map_bump arm_l_wing_256_new_n.png
+
+newmtl Model001_Material009
+map_Kd r_son_a_wear_base_pp1.png
+map_bump r_son_a_wear_nrm_512_n_pp1.png
+
+newmtl Model001_Material010
+map_Kd r_son_a_wear_base_pp1.png
+map_bump r_son_a_wear_nrm_512_n_pp1.png
+
+newmtl Model001_Material011
+map_Kd r_son_a_wear_base_pp1.png
+map_bump r_son_a_wear_nrm_512_n_pp1.png
+
+newmtl Model001_Material012
+map_Kd r_son_a_foot_base_pp1.png
+map_bump r_son_a_foot_nrm_512_n_pp1.png
+
+newmtl Model001_Material013
+map_Kd son_eye_base.png
+
+newmtl Model001_Material014
+map_Kd haguki_256.png
+
+newmtl Model001_Material015
+map_Kd black.png
+
+newmtl Model001_Material016
+map_Kd teeth_128.png
+
+newmtl Model001_Material017
+map_Kd son_matuge_base_pp1.png
+
+newmtl Model001_Material018
+map_Kd clf_eye_shadow_base.png
+
